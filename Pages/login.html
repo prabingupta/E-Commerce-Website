@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: #141414;
+        }
+
+        .form {
+            display: flex;
+
+        }
+
+        .login {
+            display: flex;
+            flex-direction: column;
+            flex: 25%;
+            align-items: center;
+            justify-content: center;
+
+
+
+        }
+
+        .login>* {
+            height: auto;
+            margin-block: 10px;
+        }
+
+        .forms {
+            width: 70%;
+
+        }
+
+        .forms button {
+            width: 200px;
+        }
+
+        input {
+            background-color: #141414;
+            border: 1px solid rgba(128, 128, 128, 0.919);
+            border-radius: 30px;
+            height: 30px;
+            margin-block: 10px;
+            width: 100%;
+            color: rgba(128, 128, 128, 0.919)
+        }
+
+        input:active {
+            border: 1px solid rgb(255, 191, 0);
+        }
+
+        .logo {
+            width: 100px;
+            height: 70px;
+        }
+
+        .register-form {
+            display: none;
+        }
+
+
+        .register-form .tabs {
+            height: 40px;
+        }
+
+        .tabs button {
+            background: none;
+            color: white;
+            border: none;
+            height: 40px;
+        }
+
+        #login-tab {
+            border-bottom: 4px solid white;
+        }
+
+        #register-tab {
+            border-bottom: 4px solid transparent;
+        }
+
+        /* button:focus {} */
+
+        .forms>* {
+            width: 100%;
+        }
+
+        form {
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .background {
+            flex: 50%;
+            background: url(/Pictures/Hero/brandi-redd-aJTiW00qqtI-unsplash.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .submit {
+            height: 40px;
+        }
+
+        .socialplat {
+            display: flex;
+            gap:10px;
+        }
+
+
+        .login-form input:nth-of-type(1),
+        .login-form input:nth-of-type(2),
+        .register-form :nth-of-type(2),
+        .register-form :nth-of-type(1),
+        .register-form :nth-of-type(3) {
+            padding: 5px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form">
+        <div class="login">
+            <img src="../Pictures/transparent background(white).png" class="logo" alt="">
+            <div class="tabs">
+                <button id="login-tab" onclick="toggle()">Login</button>
+                <button id="register-tab" onclick="toggle2()">Register</button>
+            </div>
+            <div class="forms">
+                <div class="login-form">
+                    <form  id="Login"  id="login_form">
+                        <input type="email" id="email" placeholder="email" required>
+                        <input type="password" id="password" placeholder="password" required>
+                        <button type="submit" class="submit">Login</button>
+                    </form>
+                </div>
+                <div class="register-form">
+                    <form id="register">
+                        <input type="text" id="username" placeholder="username" required>
+                        <input type="email" id="email" placeholder="email" required>
+                        <input type="password" id="password" placeholder="password" required>
+                        <button type="button" onclick="check()" class="submit">Register</button>
+                    </form>
+                </div>
+            </div>
+            <p style="color: white;">or continue with</p>
+            <div class="socialplat" style="color: white;">
+                <div class="twitter">
+                    <span>Twitter</span>
+                </div>
+                <div class="facebook">
+                    <span>Facebook</span>
+                </div>
+                <div class="google">
+                    <span>Google</span>
+                </div>
+            </div>
+        </div>
+        <div class="background">
+        </div>
+    </div>
+    <script>
+        function validateRegisterForm() {
+            var username = document.getElementById("username").value;
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+
+            if (username === "" && email === "" && password === "") {
+                alert("Please fill in all fields");
+                return false;
+            }
+            return true;
+        }
+
+        function check() {
+            if (validateRegisterForm()) {
+                alert("Registration successful!");
+                // Here you can add code to submit the form or perform any other action
+            }
+        }
+
+
+
+
+
+        const loginForm = document.querySelector(".login-form");
+        const registerForm = document.querySelector(".register-form");
+        const loginTab = document.getElementById("login-tab");
+        const registerTab = document.getElementById("register-tab")
+        function toggle() {
+            loginForm.style.display = "flex";
+            registerForm.style.display = "none";
+            loginTab.style.borderBottom = "4px solid white";
+            registerTab.style.borderBottom = "4px solid transparent";
+        }
+        function toggle2() {
+            registerForm.style.display = "flex";
+            loginForm.style.display = "none";
+            registerTab.style.borderBottom = "4px solid white"
+            loginTab.style.borderBottom = "4px solid transparent";
+        }
+    </script>
+</body>
+
+</html>

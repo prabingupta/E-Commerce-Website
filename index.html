@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for character set and viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Link to the main stylesheet -->
+    <!-- <link rel="stylesheet" href="product1.css"> -->
+    <link rel="stylesheet" href="/Css/style.css">
+    
+    <!-- Link to the favicon -->
+    <link rel="shortcut icon" href="../Pictures/inkz-favicon-color.png" type="image/x-icon">
+    
+    <!-- Title of the document -->
+    <title>Document</title>
+    
+    <!-- Internal styling for this specific HTML file -->
+    <style>
+        /* General styling for the body */
+        body {
+            background: #1b1b1b;
+        }
+        
+        /* Styling for the home-products section */
+        .home-products {
+            height: 70%;
+            background: url("../Pictures/Hero/brandi-redd-aJTiW00qqtI-unsplash.jpg");
+            margin: 0px;
+            padding: 30px;
+            padding-top: 100px;
+        }
+        
+        /* Styling for the featured cards */
+        .featured-cards {
+            display: flex;
+            justify-content: space-around;
+        }
+        
+        /* Styling for each featured card */
+        .featured-card {
+            width: 29%;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            background: white;
+            align-items: center;
+            padding-block: 10px;
+        }
+        
+        /* Styling for the featured image inside each card */
+        .featured-image {
+            padding: 20px;
+        }
+        
+        /* Styling for the image inside the featured image */
+        .featured-image img {
+            object-fit: contain;
+            width: 100%;
+            height: 200px;
+            transition: transform .3s ease;
+        }
+        
+        /* Styling for image zoom effect on hover */
+        .featured-image:hover img {
+            transform: scale(1.1);
+        }
+        
+        /* Styling for card headers and descriptions */
+        .card-header {
+            text-align: center;
+            font-size: 30px;
+            color: black;
+        }
+        
+        .card-description {
+            text-align: center;
+            color: black;
+            font-size: 20px;
+        }
+        
+        /* Styling for the explore products button */
+        .explore-products {
+            border: none;
+            width: 100px;
+            border-radius: 50px;
+            padding: 10px 20px;
+        }
+        
+        /* Styling for different buttons with IDs */
+        #best-deals-btn {
+            background-color: red;
+            color: white;
+        }
+        
+        #best-sellers-btn {
+            color: white;
+            background-color: green;
+        }
+        
+        #new-arrivals-btn {
+            color: white;
+            background-color: rgb(255, 191, 0);
+        }
+        
+        /* Hover effect for the explore-products button */
+        .explore-products:hover {
+            scale: 1.1;
+        }
+        
+        /* Styling for the partners section */
+        .partners {
+            display: flex;
+            justify-content: center;
+            background: black;
+            width: 80%;
+            padding: 20px;
+            margin-left: 150px;
+            position: relative;
+            top: 70px;
+        }
+        
+        /* Styling for the brand logos in the scroller */
+        .scroller_items img {
+            margin-left: 10px;
+        }
+        
+        .scroller_items > img {
+            width: 150px;
+            height: 150px;
+        }
+    </style>
+    
+    <!-- Link to the external JavaScript file -->
+    <script src="/Javascript/home.js"></script>
+</head>
+<body>
+    <!-- Navigation bar -->
+    <nav id="navbar">
+        <a href="home"><img src="../Pictures/transparent background(white).png" alt="#" width="100px"></a>
+        <div class="nav-text">
+            <ul>
+                <li class="navele"><a href="index.html">Home</a></li>
+                <li class="navele"><a href="/Pages/product.html">Products</a></li>
+                <li class="navele"><a href="/Pages/blog.html">Blog</a></li>
+                <li class="navele"><a href="/Pages/research.html">Research</a></li>
+                <li class="navele"><a href="/Pages/aboutus.html">About us</a></li>
+            </ul>
+        </div> 
+        <div id="icon">
+            <!-- Wishlist and cart icons -->
+            <div class="wishlist">
+                <img src="../Pictures/fontawesomeicons/heart-solid.svg" class="fnta" alt="">
+                <span class="wishlist-num">0</span>
+            </div>
+            <div class="cart">
+                <img src="../Pictures/fontawesomeicons/bag-shopping-solid.svg" class="fnta" alt="">
+                <span class="cart-num">0</span>
+            </div>
+            <!-- Login and logout links -->
+            <a href="login.html">Login</a>
+            <a href="#">Logout</a>
+        </div>
+    </nav>
+    
+    <!-- Home hero section -->
+    <section class="home-hero">
+        <div class="hero-text">
+            <!-- Header and description -->
+            <div class="header">
+                <h1 class="header" style="font-size:36px;">Discover the Power <br>of Precision <br>Printing</h1>
+            </div>
+            <div class="description" style="font-size:20px;">
+                <p>Get Exciting Deals on best Inkjet Printers From Trusted Brands.</p>
+            </div>
+            <!-- Explore button -->
+            <button class="explore">Shop-Now</button>
+        </div>
+        <!-- Hero images -->
+        <div class="hero-images" id="images">
+            <img src="../Pictures/allpngimagesofprinters/Canon/Canon/Canon1.png" alt="">
+        </div>
+    </section>
+    
+    <!-- Partners section -->
+    <section class="partners">
+        <div class="scroller">
+            <div class="scroller_items">
+                <!-- Brand logos -->
+                <img src="/Pictures/Brand logo/hp.jpeg" alt="">
+                <img src="/Pictures/Brand logo/CanonLogo.png" style="width: 400px;" alt="">
+                <img src="/Pictures/Brand logo/brotherwhite.png" alt="">
+                <img src="/Pictures/Brand logo/EPSON.jpg">
+            </div>
+        </div>
+    </section>
+    
+    <!-- Home products section -->
+    <section class="home-products" id="featured">
+        <h1 style="color:black">Our products</h1>
+        <!-- Featured cards with different categories -->
+        <div class="featured-cards">
+            <div class="featured-card Best-Deals">
+                <!-- Featured image for Best Deals -->
+                <div class="featured-image" id="home-best-deals">
+                    <img src="../Pictures/allpngimagesofprinters/Epson/Epson/Epson2.png" alt="Product Image"/>
+                </div>
+                <!-- Description and explore button -->
+                <div class="description">
+                    <p class="card-header">BestDeals</p>
+                    <p class="card-description">Get discounts worth upto 40% </p> 
+                </div>
+                <a href="product.html#best-deals">
+                    <button class="explore-products" id="best-deals-btn">Explore</button>
+                </a>
+            </div>
+            <!-- Similar structure for Best Sellers and New Arrivals cards -->
+            <div class="featured-card Best-sellers">
+                <div class="featured-image" id="home-best-sellers">
+                    <img src="../Pictures/allpngimagesofprinters/Canon/Canon/Canon1.png" id="home-best-sellers" alt="">
+                </div>
+                <div class="description">
+                    <p class="card-header">Best Sellers</p>
+                    <p class="card-description">Checkout some of the best selling Inkjet Printers</p>
+                </div>
+                <a href="product.html#best-sellers">
+                    <button class="explore-products" id="best-sellers-btn">Explore</button>
+                </a>
+            </div>
+            <div class="featured-card New-arrivals">
+                <div class="featured-image" id="home-new-arrivals">
+                    <img src="../Pictures/allpngimagesofprinters/Epson/Epson/Epson2.png" id="home-new-arrivals" alt="">
+                </div>
+                <div class="description">
+                    <p class="card-header">New Arrivals</p>
+                    <p class="card-description">Gets hands on newest technologies of Inkjet Printing</p>
+                </div>
+                <a href="product.html#new-arrivals">
+                    <button class="explore-products" id="new-arrivals-btn">Explore</button>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer section -->
+    <footer id="footer">
+        <div class="main-footer">
+            <!-- Links to different pages -->
+            <div class="pages">
+                <img src="../Pictures/transparent background(white) - Copy.png" width="70px" alt="">
+                <p><a href="index.html">Home</a></p>
+                <p><a href="/Pages/product.html">Product</a></p>
+                <p><a href="/Pages/blog.html">Blog</a></p>
+                <p><a href="/Pages/research.html">Research</a></p>
+                <p><a href="/Pages/aboutus.html">About us</a></p>
+            </div>
+            <!-- Services offered -->
+            <div class="services">
+                <h3>Services</h3>
+                <p>Printers</p>
+                <p>Ink Cartridges</p>
+                <p>Refill kits</p>
+                <p>Accessories</p>
+                <p>Ink Refill kits</p>
+                <p>Printer Software</p>
+                <p>Printer Repair Tools</p>
+            </div>
+            <!-- Contact information -->
+            <div class="contacts">
+                <h3>Contacts</h3>
+                <p>01-4031628</p>
+                <p>01-4262897</p>
+                <p>Babarmahal, Kathmandu</p>
+                <div class="social">
+                    <!-- Social media icons -->
+                    <img src="../Pictures/footer icons/facebook.svg" alt="footer-facebook">
+                    <img src="../Pictures/footer icons/instagram.svg" alt="footer-instagram">
+                    <img src="../Pictures/footer icons/x-twitter.svg" alt="footer-twitter">
+                    <img src="../Pictures/footer icons/pinterest.svg" alt="footer-pininterest">
+                </div>
+            </div>
+            <!-- Accessing the site through the app -->
+            <div>
+                <h3>Also access us from Inkz. App</h3>
+                <div class="apps">
+                    <!-- App store badges -->
+                    <img src="../Pictures/footer icons/google-play-badge.png" height="60px" alt="">
+                    <img src="../Pictures/footer icons/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- Copyright information -->
+        <div class="copyright">
+            <span>&copy; 2021 INKZ. All rights reserved.</span>
+        </div>
+    </footer>
+</body>
+</html>

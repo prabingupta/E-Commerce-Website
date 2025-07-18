@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Css/style.css">
+    <link rel="shortcut icon" href="../Pictures//inkz-favicon-color.png" type="image/x-icon">
+    <title>Products</title>
+
+</head>
+<body class="productpage">
+    <nav id ="navbar">
+        <a href="home"><img src="../Pictures/transparent background(white).png" alt="#" width="100px"></a>
+        <div class="nav-text">
+            <ul>
+                <li class="navele"><a href="../index.html">Home</a></li>
+                <li class="navele"><a href="product.html">Products</a></li>
+                <li class="navele"><a href="blog.html">Blog</a></li>
+                <li class="navele"><a href="research.html">Research</a></li>
+                <li class="navele"><a href="aboutus.html">About us</a></li>
+            </ul>
+        </div> 
+        <div id="icon">
+            <div class="wishlist">
+                <img src="../Pictures//fontawesomeicons/heart-solid.svg"  class ="fnta" alt="">
+                <span class="wishlist-num">0</span>
+            </div>
+            <div class="cart">
+                <img src="../Pictures//fontawesomeicons/bag-shopping-solid.svg" class = "fnta" alt="">
+                <span class="cart-num">0</span>
+            </div>
+              <a href="login.html">Login</a>
+              <a href="#">Logout</a>
+        </div>
+    </nav>
+    <div class="product-hero">
+            <p  class="hero-text">Purchase.Experience.Create</p>
+    </div>
+    
+    <div class="product">
+        <div class="product-container">
+            <div class="best-deals" id="best-deals">
+                <div class="product-card">
+                    <div class="product-image"><img src="../Pictures/allpngimagesofprinters/Canon/Canon/CanonM.png" alt="Product"></div>
+                    <span class="discount-percentage">-10%</span>
+                    <div class="icons">
+                        <div><img src="../Pictures//fontawesomeicons/heart-solid.svg" onclick="updateWishListCounter()" class ="fnta" alt=""></div>
+                        <div><img src="../Pictures//fontawesomeicons/bag-shopping-solid.svg" onclick="updateCartCounter()" class = "fnta" alt=""></div>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-name">Cannon MG2570S</p>
+                        <p class="product-price"><span></span>Rs.6,999</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image"><img src="../Pictures/allpngimagesofprinters/Hp/Hp/Hp1.png" alt="Product"></div>
+                    <span class="discount-percentage">-40%</span>
+                    <div class="icons">
+                        <div><img src="../Pictures//fontawesomeicons/heart-solid.svg" onclick="updateWishListCounter()" class ="fnta" alt=""></div>
+                        <div><img src="../Pictures//fontawesomeicons/bag-shopping-solid.svg" onclick="updateCartCounter()" class = "fnta" alt=""></div>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-name">HP Victus Pro</p>
+                        <p class="product-price"></span>Rs.21,000</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image"><img src="../Pictures/allpngimagesofprinters/Hp/Hp/Hp2.png" alt="Product"></div>
+                    <span class="discount-percentage">-30%</span>
+                    <div class="icons">
+                        <div><img src="../Pictures//fontawesomeicons/heart-solid.svg" onclick="updateWishListCounter()" class ="fnta" alt=""></div>
+                        <div><img src="../Pictures//fontawesomeicons/bag-shopping-solid.svg" onclick="updateCartCounter()" class = "fnta" alt=""></div>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-name">HP Predetor3000</p>
+                        <p class="product-price">Rs.25,000</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image"><img src="../Pictures/allpngimagesofprinters/Epson/Epson/Epson2.png" alt="Product"></div>
+                    <span class="discount-percentage">-20%</span>
+                    <div class="icons">
+                        <div><img src="../Pictures//fontawesomeicons/heart-solid.svg" onclick="updateWishListCounter()" class ="fnta" alt=""></div>
+                        <div><img src="../Pictures//fontawesomeicons/bag-shopping-solid.svg" onclick="updateCartCounter()" class = "fnta" alt=""></div>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-name">Epson Helios</p>
+                        <p class="product-price">Rs.18,000</p>
+                    </div>
+                </div>
+                <div id="best-deals-header">Best Deals</div>
+            </div>
+            <div class="best-sellers" id="best-sellers">
+                <div class="product-card">
+                    <div class="product-image"><img src="../Pictures/allpngimagesofprinters/Epson/Epson/Epso3.png" alt="Product"></div>
+                    <div class="icons">
+                        <div><img src="../Pictures//fontawesomeicons/heart-solid.svg" onclick="updateWishListCounter()" class ="fnta" alt=""></div>
+                        <div><img src="../Pictures//fontawesomeicons/bag-shopping-solid.svg" onclick="updateCartCounter()" class = "fnta" alt=""></div>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-name">Epson Raider</p>
+                        <p class="product-price">Rs.40,000</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image"><img src="../Pictures/allpngimagesofprinters/Epson/Epson/Epson1.png" alt="Product"></div>
+                    <div class="icons">
+                        <div><img src="../Pictures//fontawesomeicons/heart-solid.svg" onclick="updateWishListCounter()" class ="fnta" alt=""></div>
+                        <div><img src="../Pictures//fontawesomeicons/bag-shopping-solid.svg" onclick="updateCartCounter()" class = "fnta" alt=""></div>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-name">Epson E5560</p>
+                        <p class="product-price">Rs.45,000</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image"><img src="../Pictures/allpngimagesofprinters/Hp/Hp/Hp3.png" alt="Product"></div>
+                    <div class="icons">
+                        <div><img src="../Pictures//fontawesomeicons/heart-solid.svg" onclick="updateWishListCounter()" class ="fnta" alt=""></div>
+                        <div><img src="../Pictures//fontawesomeicons/bag-shopping-solid.svg" onclick="updateCartCounter()" class = "fnta" alt=""></div>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-name">HP H6070</p>
+                        <p class="product-price">Rs.12,000</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image"><img src="../Pictures/allpngimagesofprinters/Brother/Brother/Brother2.png" alt="Product"></div>
+                    <div class="icons">
+                        <div><img src="../Pictures//fontawesomeicons/heart-solid.svg" onclick="updateWishListCounter()" class ="fnta" alt=""></div>
+                        <div><img src="../Pictures//fontawesomeicons/bag-shopping-solid.svg" onclick="updateCartCounter()" class = "fnta" alt=""></div>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-name">Epson B900</p>
+                        <p class="product-price">Rs.8,000</p>
+                    </div>
+                </div>
+                <div id="best-sellers-header">Best-Sellers</div>
+            </div>
+            <div class="new-arrivals" id="new-arrivals">
+                <div class="product-card">
+                    <div class="product-image"><img src="../Pictures/allpngimagesofprinters/Canon/Canon/Canon1.png" alt="Product"></div>
+                    <span class="discount-percentage">-20%</span>
+                    <div class="icons">
+                        <div><img src="../Pictures//fontawesomeicons/heart-solid.svg" onclick="updateWishListCounter()" class ="fnta" alt=""></div>
+                        <div><img src="../Pictures//fontawesomeicons/bag-shopping-solid.svg" onclick="updateCartCounter()" class = "fnta" alt=""></div>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-name">Cannon MG2570S</p>
+                        <p class="product-price">Rs.20,999</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image"><img src="../Pictures/allpngimagesofprinters/Canon/Canon/Canon2.png" alt="Product"></div>
+                    <span class="discount-percentage">-20%</span>
+                    <div class="icons">
+                        <div><img src="../Pictures//fontawesomeicons/heart-solid.svg" onclick="updateWishListCounter()" class ="fnta" alt=""></div>
+                        <div><img src="../Pictures//fontawesomeicons/bag-shopping-solid.svg" onclick="updateCartCounter()" class = "fnta" alt=""></div>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-name">Cannon MG2570S</p>
+                        <p class="product-price">Rs.20,999</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image"><img src="../Pictures/allpngimagesofprinters/Brother/Brother/Brother.png" alt="Product"></div>
+                    <div class="icons">
+                        <div><img src="../Pictures//fontawesomeicons/heart-solid.svg" onclick="updateWishListCounter()" class ="fnta" alt=""></div>
+                        <div><img src="../Pictures//fontawesomeicons/bag-shopping-solid.svg" onclick="updateCartCounter()" class = "fnta" alt=""></div>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-name">Brother S50096</p>
+                        <p class="product-price">Rs.35,000</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image"><img src="../Pictures/allpngimagesofprinters/Epson/Epson/Epson4.png" alt="Product"></div>
+                    <div class="icons">
+                        <div><img src="../Pictures//fontawesomeicons/heart-solid.svg" onclick="updateWishListCounter()" class ="fnta" alt=""></div>
+                        <div><img src="../Pictures//fontawesomeicons/bag-shopping-solid.svg" onclick="updateCartCounter()" class = "fnta" alt=""></div>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-name">Epsoon InkMajic</p>
+                        <p class="product-price">Rs.30,000</p>
+                    </div>
+                </div>
+                <div id="new-arrivals-header">New-arrivals</div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="main-footer">
+            <div class="pages">
+                <img src="../Pictures/ background(white) - Copy.png" width="70px" alt="">
+                <p><a href="../index.html">Home</a></p>
+                <p><a href="product.html">Product</a></p>
+                <p><a href="blog.html">Blog</a></p>
+                <p><a href="research.html">Research</a></p>
+                <p><a href="aboutus.html">About us</a></p>
+            </div>
+            <div class="services">
+                <h3>Services</h3>
+                <p>Printers</p>
+                <p>Ink Cartidges</p>
+                <p>Refill kits</p>
+                <p>Accessories</p>
+                <p>Ink Refill kits</p>
+                <p>Printer Software</p>
+                <p>Printer Repair Tools</p>
+            </div>
+            <div class="contacts">
+                <h3>Contacts</h3>
+                <p>01-4031628</p>
+                <p>01-4262897</p>
+                <p>Babarmahal,Kathmandu</p>
+                <div class ="social">
+                    <img src="../Pictures/footer icons/facebook.svg" alt="footer-facebook">
+                    <img src="../Pictures//footer icons/instagram.svg" alt="footer-instagram">
+                    <img src="../Pictures//footer icons/x-twitter.svg" alt="footer-twitter">
+                    <img src="../Pictures//footer icons/pinterest.svg" alt="footer-pininterest">
+                </div>
+            </div>
+            <div>
+                <h3>Also access us from Inkz. App</h3>
+                <div class="apps">
+                    <img src="../Pictures/footer icons/google-play-badge.png" height="60px"alt="">
+                    <img src="../Pictures/footer icons/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <span>&copy; 2021 INKZ. All rights reserved.</span>
+        </div>
+    </footer>
+    <script src="../Javascript/product.js"></script>
+
+</body>
+</html>
